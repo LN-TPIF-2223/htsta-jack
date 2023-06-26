@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrée & plats-Chez Zhou</title>
+    <link
+    rel="stylesheet" href="style.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        a:visited {
+            color: whitesmoke;
+        }
+        a {
+            color: whitesmoke;
+            text-decoration: none;
+        }
+        p {font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="Logo">
+            <figure>
+        <img src="Bild/Logo2.png" height="150px">
+        <figcaption>Chez Zhou</figcaption>
+        </figure>
+        </div>
+        <p id="motto">Un restaurant chinois avec beaucoup de variété
+            et d’amour pour les plats délicieux </p>
+            <div Class="Index">
+            <nav>
+            <ul>
+                <li><a href="Index.html">Home</a>
+                    <li>Menu
+                    <ul>
+                        <li><a href="Sushi.html">Sushi</a></li>
+                        <li><a href="Plats.html">Entrée & Plats</a></li>
+                      </ul>
+                    </li>
+                <li><a href="Boissons.html">Boissons</a></li>
+                <li><a href="Desserts.html">Desserts</a></li>
+                <li><a href="Contacts.html">Contacts</a></li>
+            </ul>
+            </nav>
+            </div>
+        </header>
+        <main>
+            <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+            <script>
+                let mybutton = document.getElementById("myBtn");
+                window.onscroll = function() {scrollFunction()};
+                
+                function scrollFunction() {
+                  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    mybutton.style.display = "block";
+                  } else {
+                    mybutton.style.display = "none";
+                  }
+                }
+                function topFunction() {
+                  document.body.scrollTop = 0;
+                  document.documentElement.scrollTop = 0;
+                }
+                </script>
+                <h1>Entrée & plats</h1>
+                <ul>
+                    <li><a href="#">Soupe</a></li>
+                    <li><a href="#">Salade</a></li>
+                    <li><a href="#">Entrée chaude</a></li>
+                    <li><a href="#">Suggestions</a></li>
+                    <li><a href="Poulet">Poulet</a></li>
+                    <li><a href="#">Boeuf</a></li>
+                    <li><a href="#">Canard</a></li>
+                    <li><a href="#">Scampi</a></li>
+                    <li><a href="#">Vermicelles, nouilles & riz sauté</a></li>
+                </ul>
+                <h2 id="Poulet">Poulet</h2>
+                <p><a href="Plats/Poulet à la sauce curry rouge (Thaï).JPG">C 49.Poulet à la sauce curry rouge (Thaï)...............13.80€</a></p>
+        </main>
+    </body>
+</html>
