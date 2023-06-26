@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chez Zhou</title>
+    <link
+    rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <div class="Logo">
+        <figure>
+    <img src="Bild/Logo2.png" height="150px">
+    <figcaption>Chez Zhou</figcaption>
+    </figure>
+    </div>
+    <p id="motto">Un restaurant chinois avec beaucoup de variété
+        et d’amour pour les plats délicieux </p>
+        <div Class="Index">
+        <nav>
+        <ul>
+            <li><a href="Index.html">Home</a>
+                <li>Menu
+                <ul>
+                    <li><a href="Sushi.html">Sushi</a></li>
+                    <li><a href="Plats.html">Entrée & Plats</a></li>
+                  </ul>
+                </li>
+            <li><a href="Boissons.html">Boissons</a></li>
+            <li><a href="Desserts.html">Desserts</a></li>
+            <li><a href="Contacts.html">Contacts</a></li>
+        </ul>
+        </nav>
+        </div>
+    </header>
+    <main>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+        <script>
+            let mybutton = document.getElementById("myBtn");
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+            </script>
+        <div class="Intro">
+        <div id="Restaurant">
+            <img src="Bild/Outside.jpg" height="250px" width="600px">
+            <img src="Bild/Innen.jpg" height="250px" width="600px">
+            <img src="Bild/Buffet.jpg" height="250px" width="600px">
+        </div>
+            <div class="Box">
+            <h1 class="Text">A propos de nous</h1>
+            <p class="description"> Dans une ambiance agréable et familiale, venez savourer les plats asiatiques sur place ou tranquillement chez vous.
+                Nous avons un grand choix de sushis préparés avec des produits frais de qualité.
+                Vous pouvez déguster également des plats chinois et thaïlandais.
+                A midi nous avons un repas pour étudiants à emporter.
+                Notre restaurant vous propose un large buffet à volonté tous les midis du mardi au vendredi dans le respect des règles sanitaires.
+                Pour votre confort, commandez vos plats en ligne et nous livrons à votre domicile ou au bureau.
+                Réservez votre table!</p>
+                <h2 class="Text">Heures d'ouverture</h2>
+                <p class="description">Du mardi au dimanche (aussi jours fériés)
+                    11h40 - 14h
+                    17h40 - 22h</p>
+                    <h2 class="Text">Buffet</h2>
+                    <p class="description">Du mardi au Vendredi
+                        11h40 - 14h</p>
+                </div>
+        </div>
+        </div>
+        <div class="menu">
+        <h2>Nos menus recommandé</h2>
+        <h3>Menu A......................25.80€</h3>
+        <p>Potage pékinois</p>
+        <p>*****</p>
+        <p>Croquette de soja & Brochette de poulet</p>
+        <p>*****</p>
+        <p>Plat au choix:</p>
+        <p>Beignet poulet frit</p>
+        <p>Ou nouille sauté trois délices</p>
+        <p>Ou riz sauté au boeuf</p>
+        <p>Ou sushi plateau 15</p>
+        <p>*****</p>
+        <p>2 boule glace ou café</p>
+        </div>
+    </main>
+</body>
+</html>
